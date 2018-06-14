@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "price": "20.25",
+      "name": "Wooden Wallet",
+      "description": "Some description",
+      "image": "/images/ww.png",
+      "created_at": "08/06/2018"
+    },
+    {
+      "id": 2,
+      "price": 30,
+      "name": "Leather Wallet",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "image": "images/lw.png",
+      "created_at": "08/06/2018"
+    },
+    {
+      "id": 3,
+      "price": 15,
+      "name": "Phone hard case",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "image": "images/whc.png",
+      "created_at": "08/06/2018"
+    },
+    {
+      "id": 4,
+      "price": 50,
+      "name": "Wooden paper tray",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "image": "images/wpt.png",
+      "created_at": "08/06/2018"
+    },
+    {
+      "id": 5,
+      "price": 100,
+      "name": "Canvas painting",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "image": "images/noimage.jpg",
+      "created_at": "08/06/2018"
+    }
+  ]
+}
