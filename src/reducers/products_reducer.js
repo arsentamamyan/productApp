@@ -9,7 +9,7 @@ export default function (state = {}, action) {
         case 'UPDATE_PRODUCT':
             return {state, success:action.payload}
         case 'DELETE_PRODUCT':
-            return {...state, allProducts: action.payload}
+            return state;
         default:
             return state;
     }

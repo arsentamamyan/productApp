@@ -3,6 +3,7 @@ import { Field, reduxForm } from 'redux-form';
 import { Form as SematicForm, Input, TextArea, Button } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { updateProduct } from './actions/index';
+import { withRouter } from 'react-router-dom';
 
 class Form extends Component {
 
@@ -72,9 +73,9 @@ function mapStateToProps(state) {
     }
 }
 
-export default reduxForm({
+export default withRouter(reduxForm({
     validate,
     form: 'EditProduct'
 })(
     connect(mapStateToProps, {updateProduct})(Form)
-)
+))

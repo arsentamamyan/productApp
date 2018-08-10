@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, Icon, Grid, Image, Header, Modal } from 'semantic-ui-react';
 import { connect } from 'react-redux';
-import { deleteProduct } from '../../actions';
+import { deleteProduct, allProducts } from '../../actions';
 import { bindActionCreators } from 'redux';
 
 
@@ -92,7 +92,12 @@ class Products extends Component {
 
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({deleteProduct}, dispatch);
+    const actions = bindActionCreators({deleteProduct, allProducts}, dispatch);
+    return {
+        deleteProduct: (id) => {
+            return actions.deleteProduct(id).then(() => actions.allProducts())
+        }
+    }
 }
 
 
