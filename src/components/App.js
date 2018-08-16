@@ -9,6 +9,7 @@ import Footer from './Footer';
 import Home from '../containers/Home';
 import Product from '../containers/Product';
 import EditProduct from '../containers/EditProduct';
+import AddProduct from '../containers/AddProduct';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
                 <Switch>
                     <Route path="/product/details/:id" component={Product}/>
                     <Route path="/product/edit/:id" component={EditProduct}/>
+                    <Route path="/product/add" component={AddProduct}/>
                     <Route exact path="/" component={Home}/>
                 </Switch>
                 {/*<Footer/>*/}

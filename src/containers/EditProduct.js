@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectedProduct, clearSelectedProduct } from '../actions';
+import { selectedProduct, clearSelectedProduct, updateProduct } from '../actions';
 import { bindActionCreators } from 'redux';
 import { Container } from 'semantic-ui-react';
 
@@ -20,7 +20,7 @@ class EditProduct extends Component {
         if (selected) {
             return selected.map((item) => {
                 return(
-                    <Form key={item.id} data={item}/>
+                    <Form key={item.id} data={item} updateProduct={this.props.updateProduct}/>
                 )
             })
         }
@@ -42,7 +42,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({selectedProduct, clearSelectedProduct}, dispatch);
+    return bindActionCreators({selectedProduct, clearSelectedProduct, updateProduct}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(EditProduct);
